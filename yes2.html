@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./yes_style.css">
+        
+    </head> 
+    <body style="background-image: url(v777-kul-07.jpg); background-size: contain;">
+        <div class="container">
+            <div >
+            </div>
+            <div >
+                <h1 class = "header_text">Ek baar Aur Soch Le</h1>
+            </div>
+            <div class="gif_container" style="margin-bottom: 10px;">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDZvcjAzdDQ4cTdla3RkOTJ1bm5wdzN2dmp0anhrcnBzdThta21tZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9d3LQ6TdV2Flo8ODTU/giphy.gif" style="border-radius: 50px; margin-top: 3px; margin-bottom: 3px;">
+            </div>
+            <div class = "buttons" style="padding: 10px;">
+                <button class="btn" id = "yesButton" onclick="nextPage2()">Yes</button>
+                <button class="btn" id="noButton" onclick="nextPage()">No</button>
+                <script>
+                    function nextPage2() {
+                        window.location.href = "yes.html";
+                    }
+
+                    function nextPage() {
+                        window.location.href = "yes3.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
